@@ -1,0 +1,137 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 635px) {
+    .dateAndTime .imageCalendar {
+         margin-left: 20px;
+    }
+    
+    .dateAndTime .buttons1 .bt_minus1,
+    .dateAndTime .buttons1 .bt_plus1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .dateAndTime .imageCalendar {
+        margin:15px;
+    }
+    .dateAndTime .buttons1 {
+        margin-left: 15px;
+    }
+    .dateAndTime div{
+        margin-top: 10px;
+    }
+    .Date{
+        font-size: large ;
+    }
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.container {
+    position: center;
+}
+
+.container div {
+    float: left;
+    margin-right: 10px;
+    
+}
+
+.buttons * {
+    box-sizing: border-box;    
+}   
+ 
+.buttons,
+.buttons1 {
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    border-radius: 26px;
+    border: 2px solid #ff0000;
+}   
+
+.buttons .bt_minus,
+.buttons .bt_plus,
+.buttons1 .bt_minus1,
+.buttons1 .bt_plus1 {
+    background-color: rgb(255, 255, 255);
+    height: 40px;
+    width: 40px;
+    padding-bottom:50%;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: 0;
+    stroke: #ff0000;
+    stroke-width: 4;
+    transition: 0.5s;
+    margin: 0.5px;
+    color: #e31616;
+    font-size:200%;
+    font-family:monospace;
+}
+
+.buttons .bt_minus:hover ,
+.buttons .bt_plus:hover,
+.buttons1 .bt_minus1:hover ,
+.buttons1 .bt_plus1:hover  {
+    border-radius: 26px;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+}
+
+.buttons .bt_minus:active ,
+.buttons .bt_plus:active,
+.buttons1 .bt_minus1:active ,
+.buttons1 .bt_plus1:active  {
+    border: 0px solid #ff0000;
+}
+
+.buttons .bt_plus,
+.buttons1 .bt_minus1 {
+    border-right: 2px solid #ff0000;
+}
+
+.buttons1 .bt_plus1,
+.buttons .bt_minus {
+    border-left: 2px solid #ff0000;
+}
+
+.selectRange {
+    padding: 10px 10px 10px 10px;  
+    border: 2px solid #ff0000;
+    border-radius: 26px;
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+
+.selectRange option {
+    font-weight: bold;
+}
+
+
+.imageCalendar {
+   margin-left: 100px;
+}
+
+.dateAndTime {
+    position: relative;
+    width: auto;
+	height: auto;
+    background-color: rgb(243, 246, 225);
+    border-radius: 26px;
+    margin: 15px;
+    padding: 15px;
+    display: block;
+}
